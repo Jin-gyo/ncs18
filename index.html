@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>studnt</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div{
+        width: 500px;
+        height: 285px;
+        border: 1px solid black;
+    }
+    div div input {
+        display: block;
+        margin: 10px;
+        height: 40px;
+        font-size: 25px;
+        width: 200px;
+      }
+      div div div {
+        width: 150px;
+        height: 50px;
+        position: relative;
+        top: -180px;
+        left: 280px;
+        text-align: center;
+        line-height: 50px;
+      }
+      button {
+        position: relative;
+        top: -275px;
+        left: 250px;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heeform">
+      <form id="form1">
+        <div class="youngHee">
+          영희 <br />
+          수학 : <input type="number" placeholder="0" />
+          영어 : <input type="number" placeholder="0" />
+          국어 : <input type="number" placeholder="0" />
+           <div type="submit" name="합">합</div>
+           <div type="submit" name="평균">평균</div>
+        </div>
+      </form>
+      <button name="hee_puls">합/평균</button>
+     <!--  <button name="svg">평균</button> -->
+      <button name="reset1" type="reset">초기화</button>
+    </div>
+
+    <div class="sooform">
+      <form id="form2">
+        <div class="minSoo">
+          민수 <br />
+          수학 : <input type="number" placeholder="0" />
+          영어 : <input type="number" placeholder="0" />
+          국어 : <input type="number" placeholder="0" />
+          <div name="합">합</div>
+          <div name="평균">평균</div>
+        </div>
+      </form>
+      <button name="soo_puls">합/평균</button>
+      <!-- <button name="svg">평균</button> -->
+      <button name="reset2" type="reset">초기화</button>
+    </div>
+
+    <div class="simform">
+      <form id="form3">
+        <div class="youngSimLee">
+          영심이 <br />
+          수학 : <input type="number" placeholder="0" />
+          영어 : <input type="number" placeholder="0" />
+          국어 : <input type="number" placeholder="0" />
+          <div name="합">합</div>
+          <div name="평균">평균</div>
+        </div>
+      </form>
+      <button name="sim_puls">합/평균</button>
+      <!-- <button name="svg">평균</button> -->
+      <button name="reset3" type="reset">초기화</button>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
